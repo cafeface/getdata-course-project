@@ -41,8 +41,8 @@ create_integrated_data_set <- function( data_path ) {
 # create the tidy data set
 
 run_analysis <- function( ) {
-    data_path = paste( dd, "UCI HAR Dataset", sep = "/" )
-    data_set <- create_integrated_data_set( data_path )
+    # data_path = paste( dd, "UCI HAR Dataset", sep = "/" )
+    data_set <- create_integrated_data_set( "UCI HAR Dataset" )
     filtered <- select( data_set, 
                         subject, 
                         activity, 
