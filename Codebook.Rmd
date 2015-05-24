@@ -45,7 +45,7 @@ fBodyGyroJerkMag    | frequency of body angular jerk magnitude
 
 Each record in the tidy data table provides mean measured data by individual and activity with a single record for each individual-activity combination
 
-N.B.: All measured data (columns 3:68) are normalized and bounded to [-1, 1] (as were the raw feature data).  Hence, they have neither dimensions nor units.
+N.B.: All measured data (columns 3:68) are normalized and bounded to `[-1, 1]` (as were the raw feature data).  Hence, they have neither dimensions nor units.
 
 Column  |   Name    | Description
 --------|-----------|----------------------------------------------------
