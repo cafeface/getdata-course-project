@@ -37,6 +37,7 @@ The script defines three functions:
 
 With the top-level raw data folder in the working directory, type: 
 
-`tidy_data <- run_analysis()`
-
-
+```
+source( <path to run_analysis.R> )
+tidy_data <- run_analysis()
+```
