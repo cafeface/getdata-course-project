@@ -5,7 +5,7 @@ output: html_document
 
 # Codebook for Course Project Tidy Data Set
 
-## Data extractracted from the raw data
+## Data extracted from the raw data
 
 The raw data included measurements for each of 30 individuals and 6 activities.
 
