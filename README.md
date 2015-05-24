@@ -11,7 +11,7 @@ File            | Purpose
 ----------------|-------------------------------------------------------
 README.md       | This file.  Describes how the code works.
 run_analysis.R  | Script to read data files and prepare a tidy data set.
-Codebook.hmtl   | Description of the data set.
+Codebook.Rmd    | Description of the data set.
 
 ## Raw Data Description
 
