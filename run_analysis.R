@@ -10,8 +10,8 @@ library(dplyr)
 
 # Create a data set from the Samsung data
 
-create_data_set <- function( path, subset, feature_names ) {
-    dir <- paste( path, subset, sep = "/" )
+create_data_set <- function( data_path, subset, feature_names ) {
+    dir <- paste( data_path, subset, sep = "/" )
     subject_fname <- paste( "subject_", subset, ".txt", sep = "" )
     activity_fname <- paste( "y_", subset, ".txt", sep = "" )
     X_fname <- paste( "X_", subset, ".txt", sep = "" )
@@ -41,8 +41,8 @@ create_integrated_data_set <- function( data_path ) {
 # create the tidy data set
 
 run_analysis <- function( ) {
-    # data_path = paste( dd, "UCI HAR Dataset", sep = "/" )
-    data_set <- create_integrated_data_set( "UCI HAR Dataset" )
+    data_path = "UCI HAR Dataset"
+    data_set <- create_integrated_data_set( data_path )
     filtered <- select( data_set, 
                         subject, 
                         activity, 
