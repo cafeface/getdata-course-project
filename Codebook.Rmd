@@ -13,6 +13,7 @@ The raw data included measurements for each of 30 individuals and 6 activities.
 
 Both means and standard deviations for the following signals were read from the raw data
 
+
 ### Time-series signals
 
 Measurement         | Description
@@ -44,6 +45,7 @@ fBodyGyroJerkMag    | frequency of body angular jerk magnitude
 
 Each record in the tidy data table provides mean measured data by individual and activity with a single record for each individual-activity combination
 
+N.B.: All measured data (columns 3:68) are normalized and bounded to [-1, 1] (as were the raw feature data.  Hence, they have neither dimensions nor units.
 
 Column  |   Name    | Description
 --------|-----------|----------------------------------------------------
@@ -82,7 +84,7 @@ Column  |   Name    | Description
 33	|	fBodyBodyAccJerkMag_mean   | body linear jerk frequency magnitude (mean)
 34	|	fBodyBodyGyroMag_mean   | body angular acceleration frequency magnitude (mean)
 35	|	fBodyBodyGyroJerkMag_mean   | body angular jerk frequency magnitude (mean)
-36    |	tBodyAcc_std_X	|	 body linear acceleration in X (standard deviation)
+36  |	tBodyAcc_std_X	|	 body linear acceleration in X (standard deviation)
 37	|	tBodyAcc_std_Y	|	 body linear acceleration in Y (standard deviation)
 38	|	tBodyAcc_std_Z	|	 body linear acceleration in Z (standard deviation)
 39	|	tGravityAcc_std_X	|	 gravitational acceleration in X (standard deviation)
