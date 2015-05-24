@@ -19,7 +19,7 @@ The raw data appear in the folder "UCI HAR Dataset."  Within that folder are tex
 
 ## Code description
 
-The code makes use of the plyr and dplyr R library packages.  To run the script, the packages must be installed, but the script takes care of loading the libraries in the proper sequence.
+The code makes use of the `plyr` and `dplyr` R library packages.  To run the script, the packages must be installed, but the script takes care of loading the libraries in the proper sequence.
 
 The script defines three functions:
 
