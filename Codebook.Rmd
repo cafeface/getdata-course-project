@@ -1,0 +1,121 @@
+---
+title: "Codebook.Rmd"
+output: html_document
+---
+
+# Codebook for Course Project Tidy Data Set
+
+## Data extracted from the raw data
+
+The raw data included measurements for each of 30 individuals and 6 activities.
+
+## Signals processed for the data set
+
+Both means and standard deviations for the following signals were read from the raw data
+
+
+### Time-series signals
+
+Measurement         | Description
+--------------------|---------------------------------------
+tBodyAcc-XYZ        | body linear acceleration in X, Y, Z
+tGravityAcc-XYZ     | gravitational acceleration in X, Y, Z
+tBodyAccJerk-XYZ    | body linear jerk in X, Y, Z
+tBodyGyro-XYZ       | body angular acceleration in X, Y, Z
+tBodyGyroJerk-XYZ   | body angular jerk in X, Y, Z
+tBodyAccMag         | magnitude of body linear acceleration
+tGravityAccMag      | magnitude of gravitational acceleration
+tBodyAccJerkMag     | magnitude of body linear jerk
+tBodyGyroMag        | magnitude of body angular acceleration
+tBodyGyroJerkMag    | magnitude of body angular jerk
+
+### Frequency-domain signals
+
+Measurement         | Description
+--------------------|---------------------------------------
+fBodyAcc-XYZ        | frequency of body linear acceleration in X, Y, Z
+fBodyAccJerk-XYZ    | frequency of body linear jerk in X, Y, Z
+fBodyGyro-XYZ       | frequency of body angular acceleration in X, Y, Z
+fBodyAccMag         | frequency of body linear acceleration magnitude
+fBodyAccJerkMag     | frequency of body linear jerk magnitude
+fBodyGyroMag        | frequency of body angular acceleration magnitude
+fBodyGyroJerkMag    | frequency of body angular jerk magnitude
+
+## Form of the tidy data table
+
+Each record in the tidy data table provides mean measured data by individual and activity with a single record for each individual-activity combination
+
+N.B.: All measured data (columns 3:68) are normalized and bounded to `[-1, 1]` (as were the raw feature data).  Hence, they have neither dimensions nor units.
+
+Column  |   Name    | Description
+--------|-----------|----------------------------------------------------
+1   |	subject | subject ID
+2	|	activity | activity
+3	|	tBodyAcc_mean_X   | body linear acceleration in X (mean)
+4	|	tBodyAcc_mean_Y   | body linear acceleration in Y (mean)
+5	|	tBodyAcc_mean_Z   | body linear acceleration in Z (mean)
+6	|	tGravityAcc_mean_X  | gravitational acceleration in X (mean)
+7	|	tGravityAcc_mean_Y  | gravitational acceleration in Y (mean)
+8	|	tGravityAcc_mean_Z  | gravitational acceleration in Z (mean)
+9	|	tBodyAccJerk_mean_X   | body linear jerk in X (mean)
+10	|	tBodyAccJerk_mean_Y   | body linear jerk in Y (mean)
+11	|	tBodyAccJerk_mean_Z   | body linear jerk in Z (mean)
+12	|	tBodyGyro_mean_X   | body angular acceleration in X (mean)
+13	|	tBodyGyro_mean_Y   | body angular acceleration in Z (mean)
+14	|	tBodyGyro_mean_Z   | body angular acceleration in Z (mean)
+15	|	tBodyGyroJerk_mean_X   | body angular jerk in X (mean)
+16	|	tBodyGyroJerk_mean_Y   | body angular jerk in Y (mean)
+17	|	tBodyGyroJerk_mean_Z   | body angular jerk in Z (mean)
+18	|	tBodyAccMag_mean   | body linear acceleration magnitude (mean)
+19	|	tGravityAccMag_mean  | gravitational acceleration magnitude (mean)
+20	|	tBodyAccJerkMag_mean   | body linear jerk magnitude (mean)
+21	|	tBodyGyroMag_mean   | body angular acceleration magnitude (mean) 
+22	|	tBodyGyroJerkMag_mean   | body angular jerk magnitude (mean) 
+23	|	fBodyAcc_mean_X   | body linear acceleration frequency in X (mean)
+24	|	fBodyAcc_mean_Y   | body linear acceleration frequency in Y (mean)
+25	|	fBodyAcc_mean_Z   | body linear acceleration frequency in Z (mean)
+26	|	fBodyAccJerk_mean_X   | body linear jerk frequency in X (mean)
+27	|	fBodyAccJerk_mean_Y   | body linear jerk frequency in Y (mean)
+28	|	fBodyAccJerk_mean_Z   | body linear jerk frequency in Z (mean)
+29	|	fBodyGyro_mean_X   | body angular acceleration frequency in X (mean)
+30	|	fBodyGyro_mean_Y   | body angular acceleration frequency in Y (mean)
+31	|	fBodyGyro_mean_Z   | body angular acceleration frequency in Z (mean)
+32	|	fBodyAccMag_mean   | body linear acceleration frequency magnitude (mean)
+33	|	fBodyBodyAccJerkMag_mean   | body linear jerk frequency magnitude (mean)
+34	|	fBodyBodyGyroMag_mean   | body angular acceleration frequency magnitude (mean)
+35	|	fBodyBodyGyroJerkMag_mean   | body angular jerk frequency magnitude (mean)
+36  |	tBodyAcc_std_X	|	 body linear acceleration in X (standard deviation)
+37	|	tBodyAcc_std_Y	|	 body linear acceleration in Y (standard deviation)
+38	|	tBodyAcc_std_Z	|	 body linear acceleration in Z (standard deviation)
+39	|	tGravityAcc_std_X	|	 gravitational acceleration in X (standard deviation)
+40	|	tGravityAcc_std_Y	|	 gravitational acceleration in Y (standard deviation)
+41	|	tGravityAcc_std_Z	|	 gravitational acceleration in Z (standard deviation)
+42	|	tBodyAccJerk_std_X	|	 body linear jerk in X (standard deviation)
+43	|	tBodyAccJerk_std_Y	|	 body linear jerk in Y (standard deviation)
+44	|	tBodyAccJerk_std_Z	|	 body linear jerk in Z (standard deviation)
+45	|	tBodyGyro_std_X	|	 body angular acceleration in X (standard deviation)
+46	|	tBodyGyro_std_Y	|	 body angular acceleration in Z (standard deviation)
+47	|	tBodyGyro_std_Z	|	 body angular acceleration in Z (standard deviation)
+48	|	tBodyGyroJerk_std_X	|	 body angular jerk in X (standard deviation)
+49	|	tBodyGyroJerk_std_Y	|	 body angular jerk in Y (standard deviation)
+50	|	tBodyGyroJerk_std_Z	|	 body angular jerk in Z (standard deviation)
+51	|	tBodyAccMag_std	|	 body linear acceleration magnitude (standard deviation)
+52	|	tGravityAccMag_std	|	 gravitational acceleration magnitude (standard deviation)
+53	|	tBodyAccJerkMag_std	|	 body linear jerk magnitude (standard deviation)
+54	|	tBodyGyroMag_std	|	 body angular acceleration magnitude (standard deviation) 
+55	|	tBodyGyroJerkMag_std	|	 body angular jerk magnitude (standard deviation) 
+56	|	fBodyAcc_std_X	|	 body linear acceleration frequency in X (standard deviation)
+57	|	fBodyAcc_std_Y	|	 body linear acceleration frequency in Y (standard deviation)
+58	|	fBodyAcc_std_Z	|	 body linear acceleration frequency in Z (standard deviation)
+59	|	fBodyAccJerk_std_X	|	 body linear jerk frequency in X (standard deviation)
+60	|	fBodyAccJerk_std_Y	|	 body linear jerk frequency in Y (standard deviation)
+61	|	fBodyAccJerk_std_Z	|	 body linear jerk frequency in Z (standard deviation)
+62	|	fBodyGyro_std_X	|	 body angular acceleration frequency in X (standard deviation)
+63	|	fBodyGyro_std_Y	|	 body angular acceleration frequency in Y (standard deviation)
+64	|	fBodyGyro_std_Z	|	 body angular acceleration frequency in Z (standard deviation)
+65	|	fBodyAccMag_std	|	 body linear acceleration frequency magnitude (standard deviation)
+66	|	fBodyBodyAccJerkMag_std	|	 body linear jerk frequency magnitude (standard deviation)
+67	|	fBodyBodyGyroMag_std	|	 body angular acceleration frequency magnitude (standard deviation)
+68	|	fBodyBodyGyroJerkMag_std	|	 body angular jerk frequency magnitude (standard deviation)
+
+
